@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekolojik Kredi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Üst Kısım (Başlık ve Sayaç) -->
+    <header class="main-header">
+        <div class="logo">
+            ♻️ <span class="title">Ekolojik Kredi</span>
+        </div>
+        <div class="waste-counter">
+            <span>Toplam Atık:</span>
+            <span id="wasteCount">0</span> kg
+        </div>
+    </header>
+
+    <!-- Yan Menü -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#nedir">Nedir?</a></li>
+                <li><a href="#hazirlayanlar">Hazırlayanlar</a></li>
+                <li><a href="#ekolojik-kredi">Ekolojik Kredi</a></li>
+                <li><a href="#bize-ulasin">Bize Ulaşın</a></li>
+                <li><a href="#geri-donusum-nedir">Geri Dönüşüm Nedir?</a></li>
+                <li><a href="#kayit">Kayıt Ol</a></li>
+                <li><a href="#veri-girisi">Veri Girişi</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Ana İçerik -->
+    <main>
+        <!-- Nedir? -->
+        <section id="nedir">
+            <h1>Nedir?</h1>
+            <p>Ekolojik Kredi, bireylerin atıklarını geri dönüşümle puan kazanarak çevreye katkı sağladıkları bir sistemdir.</p>
+        </section>
+
+        <!-- Hazırlayanlar -->
+        <section id="hazirlayanlar">
+            <h1>Hazırlayanlar</h1>
+            <p><strong>Danışman Öğretmen:</strong> Osman Onuk</p>
+            <p><strong>Öğrenciler:</strong> Muhammedcan Arslanparçası, Bilal Yiğit Tezcan, Yağız Efe Yılmaz</p>
+        </section>
+
+        <!-- Ekolojik Kredi -->
+        <section id="ekolojik-kredi">
+            <h1>Ekolojik Kredi</h1>
+            <p>Atık türlerine göre puan kazanır, çevrenizi korurken ödüller elde edersiniz.</p>
+        </section>
+
+        <!-- Bize Ulaşın -->
+        <section id="bize-ulasin">
+            <h1>Bize Ulaşın</h1>
+            <p>Torbalı Anadolu Lisesi</p>
+            <p>Email: <a href="mailto:ekolojikkreditubitak@gmail.com">ekolojikkreditubitak@gmail.com</a></p>
+        </section>
+
+        <!-- Geri Dönüşüm Nedir? -->
+        <section id="geri-donusum-nedir">
+            <h1>Geri Dönüşüm Nedir?</h1>
+            <p>Geri dönüşüm, atıkların tekrar kullanılabilir hale getirilmesidir. Plastik, kağıt, cam gibi malzemeler geri dönüşümle değerlendirilir.</p>
+        </section>
+
+        <!-- Kayıt Ol -->
+        <section id="kayit">
+            <h1>Kayıt Ol</h1>
+            <form id="registrationForm">
+                <h2>Öğrenci Kaydı</h2>
+                <input type="text" placeholder="Ad Soyad" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Okul Adı" required>
+                <button type="submit">Kaydol</button>
+            </form>
+            <form id="schoolRegistrationForm">
+                <h2>Okul Kaydı</h2>
+                <input type="text" placeholder="İl" required>
+                <input type="text" placeholder="İlçe" required>
+                <input type="text" placeholder="Okul Adı" required>
+                <input type="password" placeholder="Şifre" required>
+                <button type="submit">Okul Kaydı Yap</button>
+            </form>
+        </section>
+
+        <!-- Veri Girişi -->
+        <section id="veri-girisi">
+            <h1>Veri Girişi</h1>
+            <form id="loginForm">
+                <h2>Okul Girişi</h2>
+                <input type="text" placeholder="Okul Adı" required>
+                <input type="password" placeholder="Şifre" required>
+                <button type="submit">Giriş Yap</button>
+            </form>
+            <form id="dataEntryForm" style="display: none;">
+                <h2>Veri Girişi</h2>
+                <input type="text" placeholder="Ad Soyad" required>
+                <input type="text" placeholder="Okul Numarası" required>
+                <select required>
+                    <option value="Plastik">Plastik</option>
+                    <option value="Kağıt">Kağıt</option>
+                    <option value="Cam">Cam</option>
+                    <option value="Metal">Metal</option>
+                </select>
+                <input type="number" placeholder="Miktar (kg)" required>
+                <button type="submit">Veri Kaydet</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
