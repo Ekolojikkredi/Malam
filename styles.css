@@ -1,0 +1,73 @@
+/* Genel */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Üst Kısım */
+.main-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3aafa9;
+    color: white;
+    padding: 20px;
+}
+.main-header .logo {
+    font-size: 1.5rem;
+}
+.waste-counter {
+    font-size: 1rem;
+}
+
+/* Yan Menü */
+.sidebar {
+    background: #2b7a78;
+    width: 250px;
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ana İçerik */
+main {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+section {
+    margin-bottom: 30px;
+}
+form input, form select, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form button {
+    background: #3aafa9;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
